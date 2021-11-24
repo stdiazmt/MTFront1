@@ -8,8 +8,7 @@ function iniciarSesion() {
         if (emailRegex.test($("#emailuser").val())){
             
             $.ajax({
-                url:
-                    url+"/api/user/" +$("#emailuser").val() +"/" +$("#passworduser").val(),
+                url: url+"/api/user/" +$("#emailuser").val() +"/" +$("#passworduser").val(),
                 type: "GET",
                 dataType: "json",
                 success: function (respuesta) {
