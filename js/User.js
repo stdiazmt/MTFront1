@@ -17,7 +17,7 @@ function registerUser(){
             $.ajax({
     
                 //url asignar de acuerdo a cada maquina
-                url: 'http://150.136.87.138:8080/api/user/new',
+                url: url+'/api/user/new',
                 type: 'POST',
                 data: JSON.stringify(user),
                 contentType  : "application/json;charset-UTF-8",
@@ -55,7 +55,7 @@ function registerUser(){
 function checkUser(){
     $("#table_User").empty();
     $.ajax({
-        url: 'http://150.136.87.138:8080/api/user/all',
+        url: url+'/api/user/all',
         type: 'GET',
         dataType: 'json',
         success: function(respuesta){

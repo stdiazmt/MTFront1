@@ -9,7 +9,7 @@ function iniciarSesion() {
             
             $.ajax({
                 url:
-                    "http://152.70.141.56:8080/api/user/" +$("#emailuser").val() +"/" +$("#passworduser").val(),
+                    url+"/api/user/" +$("#emailuser").val() +"/" +$("#passworduser").val(),
                 type: "GET",
                 dataType: "json",
                 success: function (respuesta) {
